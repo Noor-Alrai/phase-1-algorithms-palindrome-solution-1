@@ -1,9 +1,24 @@
 function isPalindrome(word) {
+
   // Write your algorithm here
+ 
+  const reverseWord = word.split('').reverse().join('');
+  
+
+  if (word === reverseWord){
+    return true;
+  }
+  else{
+    return false;
+  }
+ 
+
 }
 
 /* 
   Add your pseudocode here
+  if the word and revers word are the same retrn true.
+  else return false
 */
 
 /*
@@ -23,3 +38,4 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+console.log(isPalindrome("abssba"))
